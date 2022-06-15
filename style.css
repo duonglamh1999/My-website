@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spline Sans Mono', monospace;
+}
+
+section{
+    height: 100vh;
+}
+
+/* front page  */
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-container {
+    position: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    height: 15rem;
+    perspective: 1000px;
+  }
+  .flipcard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0 20px 20px rgba(0, 0,0,0.2), 0 00px 50px rgba(0, 0,0,0.2);
+    background: linear-gradient(to right bottom, rgba(255,255,255,.7),rgba(255,255,255,.3));
+    border-radius: 2rem;
+    color: black;
+  }
+  .card-container:hover .flipcard {
+    transform: rotateY(180deg); /* <=>  rotateY(.5turn) */
+  }
+  /* Position the front and back side */
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .back {
+    transform: rotateY(180deg);
+  }
+  
+  .front p {
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+  .back p {
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+  .back p span {
+    display: block;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 1.25rem;
+  }
+  ul{
+    text-decoration: none;
+  }
+  a {
+    color: black;
+    text-decoration:none;
+    font-size:20px;
+}
+/* About section*/
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-text{
+  width: 40rem;
+}
+ .about-text h1{
+ font-size: 3rem;
+}
+.about-text h2{
+  font-weight: lighter;
+  font-size: 2rem;
+  padding: 4rem 0;
+  display: flex;
+}
+.about-pic{
+  max-width: 40%;
+  padding: 5%;
+
+}
+.about-pic img{
+  width: 100%;
+} 
+
+
+/* contact section*/
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form {
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  max-width: 40rem;
+  box-shadow: 0 20px 20px rgba(0, 0,0,0.2), 0 00px 50px rgba(0, 0,0,0.2);
+  background: linear-gradient(to right bottom, rgba(255,255,255,.7),rgba(255,255,255,.3));
+  border-radius: 2rem;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form .form-input,
+.form-text-area {
+  background-color: #f0f4f5;
+  height: 50px;
+  padding-left: 16px;
+}
+
+.contact-form .form-text-area {
+  background-color: #f0f4f5;
+  height: auto;
+  padding-left: 16px;
+}
+
+.contact-form .form-control::placeholder {
+  font-weight: lighter;
+  opacity: 1;
+}
+.form-control:focus {
+  border-color: #f33fb0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px #f33fb0;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.description {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.submit-button-wrapper {
+  text-align: center;
+}
+
+.contact-form .submit-button-wrapper input {
+  border: none;
+  border-radius: 2rem;
+  background-color: #f23292;
+  color: white;
+  text-transform: uppercase;
+  padding: 1rem 5rem;
+  letter-spacing: 2px;
+}
+
+.contact-form .submit-button-wrapper input:hover {
+  background-color: #d30069;
+} 
