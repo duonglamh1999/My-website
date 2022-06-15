@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Spline Sans Mono', monospace;
+    scroll-behavior: smooth;
 }
 
 section{
@@ -10,11 +11,11 @@ section{
 }
 
 /* front page  */
-.home{
+  .home{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 .card-container {
     position: flex;
     align-items: center;
@@ -71,14 +72,7 @@ section{
     font-weight: bold;
     margin-top: 1.25rem;
   }
-  ul{
-    text-decoration: none;
-  }
-  a {
-    color: black;
-    text-decoration:none;
-    font-size:20px;
-}
+
 /* About section*/
 .about{
   display: flex;
