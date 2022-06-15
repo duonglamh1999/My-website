@@ -5,6 +5,9 @@
     font-family: 'Spline Sans Mono', monospace;
     scroll-behavior: smooth;
 }
+a{
+  text-decoration: inherit;
+}
 
 section{
     height: 100vh;
@@ -72,7 +75,12 @@ section{
     font-weight: bold;
     margin-top: 1.25rem;
   }
-
+a{
+ text-decoration:wavy;
+}
+li{
+  text-decoration: none;
+}
 /* About section*/
 .about{
   display: flex;
